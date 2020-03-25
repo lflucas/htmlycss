@@ -1,36 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* Variables */
+:root
+{
+    /* variables de color */
+    --green-color:#7ACC2D;
+    --white-color:white; 
+    --black-color:#313337;
+    /* variable de tipografia */
+    --normal:12px;
+    /* variables de espaciado  */
+    --space:10px;
+    /* variable sombra de la caja */
+    --box:0px 0 2px 1px #e6e5e9 ;
+}
+
+/* 
+fin de las variables */
+
+/* Todo lo incluido dentro del html y el body */
 html, body
 {
     padding: 0px;
     margin: 0px;
-    font-size: 12px;
-    font-family: helvetica;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
 }
+/* creacion del navbar */
 nav
 {
     display: flex;
-    background:#7ACC2D;
-    padding: 10px;
-    color: white;
+    background: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
     justify-content: space-between;/*aqui se puede mandar a la derecha toda la lista*/
     align-items: center;/*permite centrar el logo de brand*/
 }
+/* el ul dentro del nav */
 nav ul
 {
     display: flex;
 }
+/* el listado dentro del nav */
 nav li
 {
     padding-left: 20px;
     list-style: none;
 }
+/* la etiqueta a en los listados li dento del navbar */
 nav li a
 {
-    color: black;
+    color:var(--black-color);
     text-decoration: none; /*Me permite quitar el color el resaltado al link o sea lo decorado*/
 }
+/* efecto de la etiqueta "a" cuando se pasa por encima del link dentro del listado del nav */
 nav li a:hover
 {
-    color: white;
+    color:var(--white-color);
 }
 /* Realizacion del main section - menu de seccion */
 .main_section
@@ -51,15 +76,15 @@ nav li a:hover
 /* producto */
 .product
 {   
-    padding: 10px;
+    padding: var(--space);
     margin-top: -240px;
 }
 /* Producto y contenido */
 .product .content
 {
-    background-color: white;
+    background-color:var(--white-color);
     padding: 15px;
-    box-shadow: 0 0 1px #c1bcbc;
+    box-shadow:var(--box);
 }
 /* Iniciando el image_content */
 .image_content
@@ -69,11 +94,11 @@ nav li a:hover
 /* Creacion del boton para la tarjeta */
 .main_button
 {
-    background-color: #7ACC2D;
+    background-color:var(--green-color);
     width: 100%;/*Aqui el boton ocupa el 100% del tamaño de la tarjeta*/
-    padding: 10px;
-    font-size: 17px;
-    color: white;
+    padding: var(--space);
+    font-size:var(--normal);
+    color:var(--white-color);
     border: 0;
     cursor: pointer;/*para que salga la manito cuando se esta encima del boton*/
     border-radius: 2px;
