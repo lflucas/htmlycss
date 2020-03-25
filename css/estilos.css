@@ -32,27 +32,55 @@ nav li a:hover
 {
     color: white;
 }
-/* Realizacion del main section */
+/* Realizacion del main section - menu de seccion */
 .main_section
 {
     padding: 15%;
     text-align: center;
 }
+/* Productos */
 .products
 {
     background-image: url("../images/curve.png");
-    height: 200px;/*altura para notar que la imagen esta ahi*/
+    max-height: 50px;/*altura para notar que la imagen esta ahi*/
     background-size: cover;/*esto permite que la imange ocupe el tamaño que tiene*/
     background-position: center top;/*alinea hacia el centro pero hacia arriba*/
-    padding: 15%;/*esto se hace para ver el contenido de content*/
+    padding: 20%;/*esto se hace para ver el contenido de content*/
     display: flex;
 }
+/* producto */
 .product
-{
+{   
     padding: 10px;
+    margin-top: -240px;
 }
+/* Producto y contenido */
 .product .content
 {
     background-color: white;
-    padding: 20px;
+    padding: 15px;
+    box-shadow: 0 0 1px #c1bcbc;
+}
+/* Iniciando el image_content */
+.image_content
+{
+    text-align: center;
+}
+/* Creacion del boton para la tarjeta */
+.main_button
+{
+    background-color: #7ACC2D;
+    width: 100%;/*Aqui el boton ocupa el 100% del tamaño de la tarjeta*/
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    border: 0;
+    cursor: pointer;/*para que salga la manito cuando se esta encima del boton*/
+    border-radius: 2px;
+
+}
+/* Efecto de interaccion del boton */
+.main_button:hover
+{
+    background-color:#6da03e;
 }
