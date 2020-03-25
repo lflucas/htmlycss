@@ -32,3 +32,27 @@ nav li a:hover
 {
     color: white;
 }
+/* Realizacion del main section */
+.main_section
+{
+    padding: 15%;
+    text-align: center;
+}
+.products
+{
+    background-image: url("../images/curve.png");
+    height: 200px;/*altura para notar que la imagen esta ahi*/
+    background-size: cover;/*esto permite que la imange ocupe el tamaño que tiene*/
+    background-position: center top;/*alinea hacia el centro pero hacia arriba*/
+    padding: 15%;/*esto se hace para ver el contenido de content*/
+    display: flex;
+}
+.product
+{
+    padding: 10px;
+}
+.product .content
+{
+    background-color: white;
+    padding: 20px;
+}
