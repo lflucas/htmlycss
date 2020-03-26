@@ -70,7 +70,7 @@ nav li a:hover
     max-height: 50px;/*altura para notar que la imagen esta ahi*/
     background-size: cover;/*esto permite que la imange ocupe el tamaño que tiene*/
     background-position: center top;/*alinea hacia el centro pero hacia arriba*/
-    padding: 20%;/*esto se hace para ver el contenido de content*/
+    padding: 20%;/*esto se hace para ver que tiene el content*/
     display: flex;
 }
 /* producto */
@@ -109,3 +109,82 @@ nav li a:hover
 {
     background-color:#6da03e;
 }
+/* Realizacion de la seccion beneficios */
+.beneficts
+{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    padding:10%;
+}
+/* Beneficio */
+.benefict
+{
+    padding: 20px;
+    
+}
+/* Benficio dentro contenido */
+.benefict .content
+{
+    padding:5%;
+    
+}
+/* Beneficio tamaño de titulo h3 */
+.benefict h3{
+    text-align: center;
+}
+/* Beneficio dentor de contenido parrafo "p" */
+.benefict .content p
+{
+    text-align: center;
+}
+.mentions_principal
+{
+    box-shadow: var(--box);
+}
+.main_section2
+{
+    text-align: center;
+    padding: 20px;
+}
+.mentions
+{
+    display: flex;
+    background-size: cover;
+    background-position:center;
+    border: 1;
+    border-radius: 2px;
+   
+}
+.mention
+{
+    padding:var(--space);
+}
+.mention .content
+{
+    padding:5%;
+    box-shadow: var(--box);
+}
+/* Realizacion del footer */
+footer
+{
+    background-color:var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    
+}
+footer li
+{
+    color: var(--white-color);
+    list-style: none;
+
+}
+footer li a
+{
+    color: var(--white-color);
+    text-decoration: none;
+    
+}
+
+
