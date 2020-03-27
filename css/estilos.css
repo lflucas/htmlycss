@@ -10,6 +10,7 @@
     --normal:12px;
     /* variables de espaciado  */
     --space:10px;
+    --space2:20px;
     /* variable sombra de la caja */
     --box:0px 0 2px 1px #e6e5e9 ;
 }
@@ -24,6 +25,11 @@ html, body
     margin: 0px;
     font-size: var(--normal);
     font-family: 'Open Sans', sans-serif;
+    color: var(--black-color);
+}
+p
+{
+    font-size: var(--normal);
 }
 /* creacion del navbar */
 nav
@@ -31,33 +37,36 @@ nav
     display: flex;
     background: var(--green-color);
     padding: var(--space);
-    color: var(--white-color);
     justify-content: space-between;/*aqui se puede mandar a la derecha toda la lista*/
     align-items: center;/*permite centrar el logo de brand*/
+    width: 100%;
+    min-height: 60px;
 }
-/* el ul dentro del nav */
+
+/* el nav a*/
+nav a
+{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: var(--normal);
+}
+/* Cuando paso el cursor por encima del link a */
+nav a:hover
+{
+    color: var(--white-color);
+}
+/* el nav ul */
+
 nav ul
 {
     display: flex;
 }
 /* el listado dentro del nav */
-nav li
+nav ul li
 {
-    padding-left: 20px;
+    padding: 20px;
     list-style: none;
 }
-/* la etiqueta a en los listados li dento del navbar */
-nav li a
-{
-    color:var(--black-color);
-    text-decoration: none; /*Me permite quitar el color el resaltado al link o sea lo decorado*/
-}
-/* efecto de la etiqueta "a" cuando se pasa por encima del link dentro del listado del nav */
-nav li a:hover
-{
-    color:var(--white-color);
-}
-/* Realizacion del main section - menu de seccion */
 .main_section
 {
     padding: 15%;
@@ -67,32 +76,34 @@ nav li a:hover
 .products
 {
     background-image: url("../images/curve.png");
-    max-height: 50px;/*altura para notar que la imagen esta ahi*/
+    height: 95px;/*altura para notar que la imagen esta ahi*/
     background-size: cover;/*esto permite que la imange ocupe el tamaño que tiene*/
     background-position: center top;/*alinea hacia el centro pero hacia arriba*/
-    padding: 20%;/*esto se hace para ver que tiene el content*/
+    background-repeat: no-repeat;
+    padding: 15%;/*esto se hace para ver que tiene el content*/
     display: flex;
 }
 /* producto */
 .product
 {   
-    padding: var(--space);
-    margin-top: -240px;
+    padding:var(--space2);
+    margin-top: -226px;
 }
-/* Producto y contenido */
-.product .content
-{
-    background-color:var(--white-color);
-    padding: 15px;
-    box-shadow:var(--box);
-}
-/* Iniciando el image_content */
-.image_content
+.image-product
 {
     text-align: center;
 }
+/* Producto y contenido */
+.content
+{
+    background-color:var(--white-color);
+    padding: 20px;
+    box-shadow:var(--box);
+    border-radius: 3px;
+}
+
 /* Creacion del boton para la tarjeta */
-.main_button
+.main_btn
 {
     background-color:var(--green-color);
     width: 100%;/*Aqui el boton ocupa el 100% del tamaño de la tarjeta*/
@@ -105,7 +116,7 @@ nav li a:hover
 
 }
 /* Efecto de interaccion del boton */
-.main_button:hover
+.main_btn:hover
 {
     background-color:#6da03e;
 }
@@ -113,57 +124,57 @@ nav li a:hover
 .beneficts
 {
     display: flex;
-    background-size: cover;
-    background-position: center;
     padding:10%;
 }
 /* Beneficio */
 .benefict
 {
+    text-align: center;
     padding: 20px;
     
 }
-/* Benficio dentro contenido */
-.benefict .content
+/* Ajustar imagen de beneficio */
+.benefict img
 {
-    padding:5%;
-    
+    max-height: 100px;
 }
-/* Beneficio tamaño de titulo h3 */
-.benefict h3{
-    text-align: center;
-}
-/* Beneficio dentor de contenido parrafo "p" */
-.benefict .content p
+.text_benefict
 {
-    text-align: center;
+    text-align: justify;
 }
-.mentions_principal
+
+/* Definiendo la opacidad de la linea del parrafo de menciones */
+hr
 {
-    box-shadow: var(--box);
-}
-.main_section2
-{
-    text-align: center;
-    padding: 20px;
+    opacity: .2;
 }
 .mentions
 {
     display: flex;
-    background-size: cover;
-    background-position:center;
-    border: 1;
-    border-radius: 2px;
-   
+    padding: 5%;
 }
+/* Ajustando la imagen al 100% de la caja */
+.mention img
+{
+    width: 100%;
+}
+h2.mentions_title
+{
+    text-align: center;
+}
+/* Ajustando Mencion */
 .mention
 {
     padding:var(--space);
 }
-.mention .content
+/* Text de mencion */
+.mention .text
 {
-    padding:5%;
-    box-shadow: var(--box);
+    padding: var(--space);
+}
+.content_mention
+{
+    box-shadow:var(--box);
 }
 /* Realizacion del footer */
 footer
@@ -171,23 +182,9 @@ footer
     background-color:var(--black-color);
     display: flex;
     justify-content: space-between;
-    padding-right: 40px;
-    
-}
-footer li
-{
+    font-size: var(--normal);
+    padding: var(--space);
     color: var(--white-color);
-    list-style: none;
-
-}
-footer li a
-{
-    color: var(--white-color);
-    text-decoration: none;
     
-}
-footer li a:hover
-{
-    color: var(--green-color);
 }
 

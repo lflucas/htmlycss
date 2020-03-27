@@ -16,5 +16,7 @@
    .beneficts, .mentions
    {
        display: inherit;
+       height: auto;
+       
    }
 }
