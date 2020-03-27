@@ -1,0 +1,96 @@
+/* Definir la duracion de la animación por medio de la clase .fadeIn */
+.fadeIn
+{
+    /* define la duacion de la animación */
+    -webkit-animation-duration:4s;
+    animation-duration: 4s;
+    /* Definir los gitframes de ida y de regreso */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    /* Dando el nombre de la animacion */
+    -webkit-animation-name:fadeIn;
+    animation-name: fadeIn;
+}
+/* Realizar un Keyfram con el identificador fadeIn */
+@keyframes fadeIn
+{
+    /* Definir la animacion que tiene esta clase */
+
+    /* Por medio del form definimos los estados de form - to */
+    from
+    {
+        /* Realizando animacion de opacidad */
+        opacity: 0;
+    }
+    to 
+    {
+        /* Hasta opacidad 1 */
+        opacity: 1;
+    }
+}
+/* Aqui se esta animando el navbar usando la clase .fadeInDown y el @keyframes fadeInDown */
+.fadeInDown
+{
+    /* define la duacion de la animación */
+    -webkit-animation-duration:1s;
+    animation-duration: 1s;
+    /* Definir los gitframes de ida y de regreso */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    /* Dando el nombre de la animacion */
+    -webkit-animation-name:fadeInDown;
+    animation-name: fadeInDown;
+
+}
+/* Ahora se define desde arriba hacia abajo haciendo un fadeIn */
+
+@keyframes fadeInDown
+{
+    from
+    {
+        opacity: 0;
+        /* Animando elementos de CSS con transform */
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+    }
+    to
+    {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+/* Realizacion de  */
+
+
+.fadeInUp
+{
+    /* define la duacion de la animación */
+    -webkit-animation-duration:1s;
+    animation-duration: 1s;
+    /* Definir los gitframes de ida y de regreso */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    /* Dando el nombre de la animacion */
+    -webkit-animation-name:fadeInUp;
+    animation-name: fadeInUp;
+
+}
+/* Ahora se define desde arriba hacia abajo haciendo un fadeIn */
+
+@keyframes fadeInUp
+{
+    from
+    {
+        opacity: 0;
+        /* Animando elementos de CSS con transform */
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    to
+    {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
