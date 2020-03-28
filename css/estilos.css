@@ -142,6 +142,22 @@ nav ul li
 {
     text-align: justify;
 }
+.container_uno
+{
+    padding: 10px;
+}
+.container_uno img
+{
+    width: 100%;
+}
+.container_dos img
+{
+    width: 100%;
+}
+.container_tres img
+{
+    width: 100%;
+}
 
 /* Definiendo la opacidad de la linea del parrafo de menciones */
 hr
