@@ -1,4 +1,4 @@
-.container_uno, .container_dos, .container_tres
+.container_uno, .container_dos, .container_tres, .container 
 {
     /* delimitar el container con un maximo de espacio */
     max-width: 900px;
