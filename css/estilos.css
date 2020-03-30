@@ -154,18 +154,11 @@ nav ul li
 {
     padding: 10px;
 }
-.container_uno img
+.container_uno img, .container_dos img, .container_tres img
 {
     width: 100%;
 }
-.container_dos img
-{
-    width: 100%;
-}
-.container_tres img
-{
-    width: 100%;
-}
+
 
 /* Definiendo la opacidad de la linea del parrafo de menciones */
 hr
@@ -210,6 +203,10 @@ footer
     padding: var(--space);
     color: var(--white-color);
     
+}
+.contact a
+{
+    color:var(--green-color);
 }
 /* Alineacion del parrafo del container_uno */
 .container_uno .parrafo

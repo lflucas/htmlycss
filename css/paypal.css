@@ -11,6 +11,7 @@ body
     height: 100vh;
     /* para centrar la image; */    
 }
+
 .content_paypal a
 {
     color:var(--green-color);
