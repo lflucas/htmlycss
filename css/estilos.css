@@ -238,7 +238,8 @@ footer
 {
     background-color: var(--white-color);
     box-shadow: var(--box);
-    padding: var(--space);
+    padding: var(--space2);
+  
 }
 .modulo_pago_images
 /*    Se declara que la imagen tendra un maximo mayor de 200px */  
@@ -263,4 +264,9 @@ footer
 .modulo_pago .main_btn
 {
     margin-top: 10px;
+}
+/* Realizacion de faqs y container para quedar bien alineado con el footer */
+.faqs, .container
+{
+    padding:10%;
 }
