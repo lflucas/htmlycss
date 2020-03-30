@@ -1,0 +1,18 @@
+body
+{
+    background-color:var(--black-color);
+    text-align: center;
+    /* color del texto  */
+    color:var(--white-color);
+    /* para centrar la image; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* para centrar la image; */    
+}
+.content_paypal a
+{
+    color:var(--green-color);
+    text-decoration: none;
+}

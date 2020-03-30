@@ -46,7 +46,11 @@
                 <!-- Realizacion modulo de general pago -->
                 <div class="modulo_pago">
                     <div class="modulo">
+                        <!-- en el action se coloca el link de paypal para redirigir al sistema de pagos -->
                         <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F5GVTGTVQAVEG" method="POST">
+                            <input type="hidden" name="first_name" value="Jhon">
+                            <input type="hidden" name="night_phone_a" value="610">
+                            <input type="hidden" name="email" value="jdoe@zyzzyu.com">
                             <label for="name">Nombre</label>
                             <br>
                             <input type="text" placeholder="" name="name" class="data">
